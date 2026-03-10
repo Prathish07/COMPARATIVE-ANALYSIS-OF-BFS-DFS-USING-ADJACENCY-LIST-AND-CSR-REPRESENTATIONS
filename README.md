@@ -1,4 +1,4 @@
-# COMPARATIVE-ANALYSIS-OF-BFS-AND-DFS-USING-ADJACENCY-LIST-AND-CSR
+# Graph Traversal Analysis
 Comparative performance analysis of BFS and DFS using Adjacency List and CSR representations for scalable graph traversal.
 
 ## Overview
