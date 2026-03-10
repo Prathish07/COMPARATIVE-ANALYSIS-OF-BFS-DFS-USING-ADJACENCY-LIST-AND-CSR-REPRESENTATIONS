@@ -31,15 +31,18 @@ The goal is to analyze how graph storage structures influence traversal performa
 ---
 
 ## Repository Structure
-- Graph-BFS-DFS-CSR
-- |code
-- │ bfs_dfs_comparison.cpp
-- |plots
-- │ bfs_comparison.png
-- │ dfs_comparison.png
-- |documentation
-- │ Doc.pdf
-- |README.md
+- │
+- ├── code
+- │ └── bfs_dfs_comparison.cpp
+- │
+- ├── plots
+- │ ├── bfs_comparison.png
+- │ └── dfs_comparison.png
+- │
+- ├── documentation
+- │ └── Doc.pdf
+- │
+- └── README.md
 
 
 ---
