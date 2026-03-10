@@ -152,3 +152,34 @@ int main() {
 
     return 0;
 }
+
+
+Comparison Plot:
+
+import matplotlib.pyplot as plt
+# Data
+vertices = [1000, 5000, 10000]
+bfs_list = [0.3962, 1.7368, 3.8149]
+dfs_list = [0.5592, 1.5117, 5.3644]
+bfs_csr = [0.2891, 1.0982, 2.4037]
+dfs_csr = [0.2791, 0.7782, 1.9884]
+# BFS comparison
+plt.figure(figsize=(8,5))
+plt.plot(vertices, bfs_list, 'o-', label='BFS (Adjacency List)')
+plt.plot(vertices, bfs_csr, 's-', label='BFS (CSR)')
+plt.xlabel('Number of Vertices')
+plt.ylabel('Execution Time (ms)')
+plt.title('BFS Performance Comparison')
+plt.legend()
+plt.grid(True)
+plt.show()
+# DFS comparison
+plt.figure(figsize=(8,5))
+plt.plot(vertices, dfs_list, 'o-', label='DFS (Adjacency List)')
+plt.plot(vertices, dfs_csr, 's-', label='DFS (CSR)')
+plt.xlabel('Number of Vertices')
+plt.ylabel('Execution Time (ms)')
+plt.title('DFS Performance Comparison')
+plt.legend()
+plt.grid(True)
+plt.show()
